@@ -37,7 +37,7 @@ To install *xcode-select* run and follow the guide:
 
 #### Selective way
 
-If you only want to run one of the setup scripts (see in *.config/* for scripts)
+If you only want to run one of the setup scripts (see in *.setup_scripts/* for scripts)
 
 - chmod script
 
@@ -45,4 +45,4 @@ If you only want to run one of the setup scripts (see in *.config/* for scripts)
 
 - Run scripts
 
-  `./setup.sh`
+  `./<name>`
