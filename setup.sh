@@ -10,10 +10,10 @@ chmod u+x .config/link_config.sh
 echo "chmod...done"
 
 echo "Installering defaults..."
-. .config/general.sh
-. .config/brew.sh
+./.config/general.sh
+./.config/brew.sh
 echo "Installing defaults...done"
 
 echo "Installing configs..."
-. .config/link_config.sh
+./.config/link_config.sh
 echo "Configs...done"
