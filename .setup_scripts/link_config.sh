@@ -12,9 +12,16 @@ for f in "${files[@]}" ; do
 done
 echo "Removing defaults...done"
 
-echo "Linking configs with -s"
+echo "Linking configs with ln -s"
 ln -s "$HOME"/.config/pk10/.pk10.zsh "$HOME"/.pk10.zsh
 ln -s "$HOME"/.config/oh-my-zsh/.zshrc "$HOME"/.zshrc
+
+echo "Linking configs with their tag"
+if ! command -v dnscrypt-proxy &> /dev/null ;  then
+    sudo dnscrypt-proxy -config ~/.config/dnscrypt-proxy/dnscrypt-proxy.toml
+    echo "To start dnscrypt-proxy run:"
+    echo "'sudo brew services start dnscrypt-proxy'"
+fi
 echo "Linking...done"
 
 echo "Linking configs...done"
