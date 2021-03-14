@@ -20,7 +20,7 @@ echo "Linking configs with their tag"
 if ! command -v dnscrypt-proxy &> /dev/null ;  then
     sudo dnscrypt-proxy -config ~/.config/dnscrypt-proxy/dnscrypt-proxy.toml
     echo "To start dnscrypt-proxy run:"
-    echo "\tsudo brew services start dnscrypt-proxy"
+    echo "'sudo brew services start dnscrypt-proxy'"
 fi
 echo "Linking...done"
 
