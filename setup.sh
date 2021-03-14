@@ -5,6 +5,7 @@ check_fail() {
     echo "$@...SUCCESS"
   else
     echo "$@...FAILED"
+  fi
 }
 
 echo "Starting setup"
