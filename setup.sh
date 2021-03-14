@@ -1,13 +1,5 @@
 #!/bin/bash
 
-check_fail() {
-  if [ $? -eq 0 ] ; then
-    echo "$@...SUCCESS"
-  else
-    echo "$@...FAILED"
-  fi
-}
-
 echo "Starting setup"
 echo "Password might be needed..."
 
@@ -18,13 +10,14 @@ chmod u+x .setup_scripts/link_config.sh
 echo "chmod...done"
 
 echo "Installering defaults..."
-./.setup_scripts/general.sh
-check_fail "GENERAL"
--e ./.setup_scripts/brew.sh
-check_fail "BREW"
+if ! ./.setup_scripts/general.sh ; then
+  echo "GENERAL...FAILED" ; fi
+if ! ./.setup_scripts/brew.sh ; then
+  echo "BREW...FAILED" ; fi
 echo "Installing defaults...done"
 
 echo "Installing configs..."
-./.setup_scripts/link_config.sh
-check_fail "LINK_CONFIG"
+if ! ./.setup_scripts/link_config.sh ; then
+  echo "LINK_CONFIG...FAILED" ; fi
 echo "Configs...done"
+
