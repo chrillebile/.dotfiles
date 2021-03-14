@@ -25,9 +25,4 @@ echo "Installing Brew Applications..."
 brew install --cask iterm2 spotify visual-studio-code font-meslo-lg-nerd-font
 echo "Casks...done"
 
-echo "Starting brew services"
-sudo dnscrypt-proxy -config ~/.config/dnscrypt-proxy/dnscrypt-proxy.toml
-sudo brew services start dnscrypt-proxy
-echo "Starting brew services...done"
-
 echo "Brew...done"
