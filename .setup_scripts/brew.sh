@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 echo "Starting brew.sh..."
 echo "Checking if brew is installed"

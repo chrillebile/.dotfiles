@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 echo "Starting link_config.sh..."
 files=("$HOME/.pk10.zsh" "$HOME/.zshrc")
