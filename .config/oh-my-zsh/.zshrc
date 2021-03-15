@@ -79,14 +79,16 @@ source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git
+  git
   osx
   brew
   tmux
   sudo
-	zsh-syntax-highlighting
-	zsh-autosuggestions
+  zsh-syntax-highlighting
+  zsh-autosuggestions
   vi-mode
+  autojump
+  vscode
 )
 
 source $ZSH/oh-my-zsh.sh
