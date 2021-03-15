@@ -18,7 +18,7 @@ brew tap homebrew/cask-fonts
 echo "Tapping...done"
 
 echo "Installing Brew Packages..."
-brew install git yadm zsh python tldr romkatv/powerlevel10k/powerlevel10k topgrade dnscrypt-proxy
+brew install git yadm zsh python tldr romkatv/powerlevel10k/powerlevel10k topgrade dnscrypt-proxy autojump
 echo "Packages...done"
 
 echo "Installing Brew Applications..."
