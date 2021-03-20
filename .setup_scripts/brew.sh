@@ -18,11 +18,22 @@ brew tap homebrew/cask-fonts
 echo "Tapping...done"
 
 echo "Installing Brew Packages..."
-brew install git yadm zsh python tldr romkatv/powerlevel10k/powerlevel10k topgrade dnscrypt-proxy autojump
+brew install git
+brew install yadm
+brew install zsh
+brew install python
+brew install tldr
+brew install romkatv/powerlevel10k/powerlevel10k
+brew install topgrade
+brew install dnscrypt-proxy
+brew install autojump
 echo "Packages...done"
 
 echo "Installing Brew Applications..."
-brew install --cask iterm2 spotify visual-studio-code font-meslo-lg-nerd-font
+brew install --cask iterm2
+brew install --cask spotify
+brew install --cask visual-studio-code
+brew install --cask font-meslo-lg-nerd-font
 echo "Casks...done"
 
 echo "Brew...done"
