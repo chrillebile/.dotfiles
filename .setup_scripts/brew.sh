@@ -34,6 +34,7 @@ brew install --cask iterm2
 brew install --cask spotify
 brew install --cask visual-studio-code
 brew install --cask font-meslo-lg-nerd-font
+brew install --cask appcleaner
 echo "Casks...done"
 
 echo "Brew...done"
