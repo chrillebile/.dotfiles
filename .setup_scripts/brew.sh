@@ -21,7 +21,7 @@ echo "Installing Brew Packages..."
 brew install git
 brew install yadm
 brew install zsh
-brew install python
+brew install asdf
 brew install tldr
 brew install romkatv/powerlevel10k/powerlevel10k
 brew install topgrade
