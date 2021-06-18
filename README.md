@@ -1,5 +1,7 @@
 # My .files
 
+[![CI - Setup - Linting](https://github.com/chrillebile/.dotfiles/actions/workflows/setup.yml/badge.svg?branch=main)](https://github.com/chrillebile/.dotfiles/actions/workflows/setup.yml)
+
 ## MacOS setup
 ### Requirements
 This requires the following;
