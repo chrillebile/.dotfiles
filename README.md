@@ -48,3 +48,12 @@ If you only want to run one of the setup scripts (see in *.setup_scripts/* for s
 - Run scripts
 
   `./<name>`
+
+### Setting up iTerm2
+
+- Open iTerm2
+- Select iTerm2 -> Preferences
+- Under the General tab -> Preferences, check the box labeled "Load Preferences from custom folder or URL"
+- Press "Browse" and point it to `~/.config/iTerm2`
+- Restart iTerm2
+
