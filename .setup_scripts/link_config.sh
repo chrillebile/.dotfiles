@@ -22,6 +22,10 @@ if ! command -v dnscrypt-proxy &> /dev/null ;  then
     echo "To start dnscrypt-proxy run:"
     echo "'sudo brew services start dnscrypt-proxy'"
 fi
+
+echo "Linking iTerms2 config"
+defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "${HOME}/.config/iterm2"
+defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
 echo "Linking...done"
 
 echo "Linking configs...done"

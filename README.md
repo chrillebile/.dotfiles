@@ -49,7 +49,7 @@ If you only want to run one of the setup scripts (see in *.setup_scripts/* for s
 
   `./<name>`
 
-### Setting up iTerm2
+### Manually setting up iTerm2
 
 - Open iTerm2
 - Select iTerm2 -> Preferences
