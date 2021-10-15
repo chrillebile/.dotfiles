@@ -27,6 +27,7 @@ brew install romkatv/powerlevel10k/powerlevel10k
 brew install topgrade
 brew install dnscrypt-proxy
 brew install autojump
+brew install neovim
 echo "Packages...done"
 
 echo "Installing Brew Applications..."

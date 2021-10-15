@@ -10,6 +10,7 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export KUBECONFIG="$HOME/kubeconfig"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -90,6 +91,7 @@ plugins=(
   autojump
   vscode
   asdf
+  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,6 +125,7 @@ source $ZSH/oh-my-zsh.sh
 alias c="clear"
 alias cdc="cd; c"
 alias gs="git status"
+alias nv="nvim"
 
 export GPG_TTY=$(tty)
 
