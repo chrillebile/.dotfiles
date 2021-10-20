@@ -19,4 +19,9 @@ git clone https://github.com/NvChad/NvChad ~/.config/nvim
 nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
 echo "Installing NVChad...done"
 
+echo "Setting up pinentry"
+echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+killall gpg-agent
+echo "Setting up pinentry...done"
+
 echo "General...done"

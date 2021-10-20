@@ -28,6 +28,7 @@ brew install topgrade
 brew install dnscrypt-proxy
 brew install autojump
 brew install neovim
+brew install pinentry-mac # Needed for gpg signing
 echo "Packages...done"
 
 echo "Installing Brew Applications..."
