@@ -81,7 +81,7 @@ source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  osx
+  macos
   brew
   tmux
   sudo
