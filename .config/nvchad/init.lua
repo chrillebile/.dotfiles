@@ -32,6 +32,10 @@ hooks.add("install_plugins", function(use)
       "williamboman/nvim-lsp-installer",
       --further packer options
    }
+
+   use {
+     "nvim-telescope/telescope-media-files.nvim",
+   }
 end)
 
 -- NOTE: we heavily suggest using Packer's lazy loading (with the 'event' field)
