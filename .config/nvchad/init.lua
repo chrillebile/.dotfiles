@@ -4,25 +4,18 @@
 -- This is where your custom modules and plugins go.
 -- Please check NvChad docs if you're totally new to nvchad + dont know lua!!
 
-local hooks = require "core.hooks"
+local map = require("core.utils").map
 
 -- MAPPINGS
 -- To add new plugins, use the "setup_mappings" hook,
 
-hooks.add("setup_mappings", function(map)
-   map("n", "<leader>cc", ":Telescope <CR>", opt)
-   map("n", "<leader>q", ":q <CR>", opt)
-end)
-
--- NOTE : opt is a variable  there (most likely a table if you want multiple options),
--- you can remove it if you dont have any custom options
+map("n", "<leader>cc", ":Telescope <CR>")
+map("n", "<leader>q", ":q <CR>")
 
 -- Install plugins
--- To add new plugins, use the "install_plugin" hook,
+local customPlugins = require "core.customPlugins"
 
--- examples below:
-
-hooks.add("install_plugins", function(use)
+customPlugins.add(function(use)
    use {
       "max397574/better-escape.nvim",
       event = "InsertEnter",
