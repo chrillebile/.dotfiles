@@ -10,7 +10,11 @@ M.ui = {
    theme = "gruvchad",
 }
 
+-- Install plugins
+local userPlugins = require "custom.plugins"
+
 M.plugins = {
+  install = userPlugins,
   options = {
     lspconfig = {
       setup_lspconf = "custom.plugins.lspconfig",

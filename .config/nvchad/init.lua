@@ -13,23 +13,23 @@ map("n", "<leader>cc", ":Telescope <CR>")
 map("n", "<leader>q", ":q <CR>")
 
 -- Install plugins
-local customPlugins = require "core.customPlugins"
+-- local customPlugins = require "core.customPlugins"
 
-customPlugins.add(function(use)
-   use {
-      "max397574/better-escape.nvim",
-      event = "InsertEnter",
-   }
+-- customPlugins.add(function(use)
+--    use {
+--       "max397574/better-escape.nvim",
+--       event = "InsertEnter",
+--    }
 
-   use {
-      "williamboman/nvim-lsp-installer",
-      --further packer options
-   }
+--    use {
+--       "williamboman/nvim-lsp-installer",
+--       --further packer options
+--    }
 
-   use {
-     "nvim-telescope/telescope-media-files.nvim",
-   }
-end)
+--    use {
+--      "nvim-telescope/telescope-media-files.nvim",
+--    }
+-- end)
 
 -- NOTE: we heavily suggest using Packer's lazy loading (with the 'event' field)
 -- see: https://github.com/wbthomason/packer.nvim
