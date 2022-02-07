@@ -16,7 +16,7 @@ echo "Installing external oh-my-zsh plugins...done"
 
 echo "Installing NVChad"
 git clone https://github.com/NvChad/NvChad ~/.config/nvim
-nvim +'hi NormalFloat guibg=#1e222a' +PackerSync
+echo "Run the following in order to complete the installation of nvchad: nvim +'hi NormalFloat guibg=#1e222a' +PackerSync"
 echo "Installing NVChad...done"
 
 echo "Setting up pinentry"
