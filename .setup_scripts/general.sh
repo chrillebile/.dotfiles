@@ -22,7 +22,8 @@ echo "Installing NVChad...done"
 echo "Setting up pinentry"
 mkdir -p "$HOME"/.gnupg
 echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
-killall gpg-agent
+if pgrep gpg-agent ; then
+  killall gpg-agent ; fi
 echo "Setting up pinentry...done"
 
 echo "General...done"
