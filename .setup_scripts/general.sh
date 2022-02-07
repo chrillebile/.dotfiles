@@ -20,6 +20,7 @@ echo "Run the following in order to complete the installation of nvchad: nvim +'
 echo "Installing NVChad...done"
 
 echo "Setting up pinentry"
+mkdir -p "$HOME"/.gnupg
 echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
 killall gpg-agent
 echo "Setting up pinentry...done"
