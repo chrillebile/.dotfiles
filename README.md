@@ -2,24 +2,26 @@
 
 [![CI - Setup - Linting](https://github.com/chrillebile/.dotfiles/actions/workflows/setup.yml/badge.svg?branch=main)](https://github.com/chrillebile/.dotfiles/actions/workflows/setup.yml)
 
-## MacOS setup
-### Requirements
-This requires the following;
-* git - *should be installed by default on MacOS*
-* xcode-select - Needed for building some of the packages
+## macOS setup
 
-To install *xcode-select* run and follow the guide:
+### Requirements
+
+This requires the following;
+
+- git - _should be installed by default on macOS_
+- xcode-select - Needed for building some of the packages
+
+To install _xcode-select_ run and follow the guide:
 
 `xcode-select --install`
 
-
 ### Setup
 
-- If you want to clone this repository with "yadm": ***\*recommended\****
+- If you want to clone this repository with "yadm": **\*\*recommended\*\***
 
-  - First you need to install [brew](https://brew.sh) 
-  - Then install [yadm](https://yadm.io) with: 
-    
+  - First you need to install [brew](https://brew.sh)
+  - Then install [yadm](https://yadm.io) with:
+
     `brew install yadm`
 
 - Clone repository:
@@ -36,10 +38,9 @@ To install *xcode-select* run and follow the guide:
 
   `./setup.sh`
 
-
 #### Selective way
 
-If you only want to run one of the setup scripts (see in *.setup_scripts/* for scripts)
+If you only want to run one of the setup scripts (see in _.setup_scripts/_ for scripts)
 
 - chmod script
 
@@ -56,4 +57,3 @@ If you only want to run one of the setup scripts (see in *.setup_scripts/* for s
 - Under the General tab -> Preferences, check the box labeled "Load Preferences from custom folder or URL"
 - Press "Browse" and point it to `~/.config/iTerm2`
 - Restart iTerm2
-

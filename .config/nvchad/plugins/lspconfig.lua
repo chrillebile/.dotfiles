@@ -13,31 +13,8 @@ M.setup_lsp = function(attach, capabilities)
          },
          settings = {},
       }
-
---       if server.name == "rust_analyzer" then
---          opts.settings = {
---             ["rust-analyzer"] = {
---                experimental = {
---                   procAttrMacros = true,
---                },
---             },
---          }
--- 
---          opts.on_attach = function(client, bufnr)
---             local function buf_set_keymap(...)
---                vim.api.nvim_buf_set_keymap(bufnr, ...)
---             end
--- 
---             -- Run nvchad's attach
---             attach(client, bufnr)
--- 
---             -- Use nvim-code-action-menu for code actions for rust
---             buf_set_keymap(bufnr, "n", "<leader>ca", "lua vim.lsp.buf.range_code_action()<CR>", { noremap = true, silent = true })
---             buf_set_keymap(bufnr, "v", "<leader>ca", "lua vim.lsp.buf.range_code_action()<CR>", { noremap = true, silent = true })
---          end
---       end
-
       server:setup(opts)
+      -- luacheck: globals vim
       vim.cmd [[ do User LspAttachBuffers ]]
    end)
 end

@@ -25,8 +25,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Run Shellcheck
-        uses: azohra/shell-linter@latest
+          #- name: Run Shellcheck
+          #uses: azohra/shell-linter@latest
+      - name: Lint Code Base
+        uses: github/super-linter/slim@v4
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # This workflow contains a single job called "build"
   build:
