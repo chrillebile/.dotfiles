@@ -14,6 +14,7 @@ M.setup_lsp = function(attach, capabilities)
          settings = {},
       }
       server:setup(opts)
+      -- luacheck: globals vim
       vim.cmd [[ do User LspAttachBuffers ]]
    end)
 end
