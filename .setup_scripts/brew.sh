@@ -36,6 +36,8 @@ brew install --cask spotify
 brew install --cask visual-studio-code
 brew install --cask font-meslo-lg-nerd-font
 brew install --cask appcleaner
+brew install --cask alfred
+brew install --cask bartender
 echo "Casks...done"
 
 echo "Brew...done"

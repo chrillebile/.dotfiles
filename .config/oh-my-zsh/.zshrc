@@ -83,7 +83,6 @@ plugins=(
   git
   macos
   brew
-  tmux
   sudo
   zsh-syntax-highlighting
   zsh-autosuggestions
