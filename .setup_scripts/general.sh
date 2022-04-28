@@ -15,7 +15,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-$HOME/
 echo "Installing external oh-my-zsh plugins...done"
 
 echo "Installing NVChad"
-git clone https://github.com/NvChad/NvChad ~/.config/nvim
+git clone https://github.com/NvChad/NvChad "$HOME"/.config/nvim
 echo "Run the following in order to complete the installation of nvchad: nvim +'hi NormalFloat guibg=#1e222a' +PackerSync"
 echo "Installing NVChad...done"
 
