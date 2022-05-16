@@ -18,7 +18,7 @@ brew tap homebrew/cask-fonts
 echo "Tapping...done"
 
 echo "Installing Brew Packages..."
-brew install git
+# brew install git : Removed git because it fails for some reason.
 brew install yadm
 brew install zsh
 brew install tldr
