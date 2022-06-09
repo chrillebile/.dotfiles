@@ -91,6 +91,7 @@ plugins=(
   vscode
   asdf
   kubectl
+  1password
 )
 
 source $ZSH/oh-my-zsh.sh
