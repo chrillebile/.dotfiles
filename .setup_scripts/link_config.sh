@@ -17,12 +17,12 @@ mkdir -p "$HOME"/.config/nvim/lua/custom/plugins
 echo "Linking configs with ln -s"
 ln -s "$HOME"/.config/pk10/.pk10.zsh "$HOME"/.pk10.zsh
 ln -s "$HOME"/.config/oh-my-zsh/.zshrc "$HOME"/.zshrc
-ln -s "$HOME"/.config/nvchad/init.lua "$HOME"/.config/nvim/lua/custom/init.lua
-ln -s "$HOME"/.config/nvchad/chadrc.lua "$HOME"/.config/nvim/lua/custom/chadrc.lua
-ln -s "$HOME"/.config/nvchad/mappings.lua "$HOME"/.config/nvim/lua/custom/mappings.lua
-ln -s "$HOME"/.config/nvchad/plugins/init.lua "$HOME"/.config/nvim/lua/custom/plugins/init.lua
-ln -s "$HOME"/.config/nvchad/plugins/configs.lua "$HOME"/.config/nvim/lua/custom/plugins/configs.lua
-ln -s "$HOME"/.config/nvchad/plugins/lspconfig.lua "$HOME"/.config/nvim/lua/custom/plugins/lspconfig.lua
+#ln -s "$HOME"/.config/nvchad/init.lua "$HOME"/.config/nvim/lua/custom/init.lua
+#ln -s "$HOME"/.config/nvchad/chadrc.lua "$HOME"/.config/nvim/lua/custom/chadrc.lua
+#ln -s "$HOME"/.config/nvchad/mappings.lua "$HOME"/.config/nvim/lua/custom/mappings.lua
+#ln -s "$HOME"/.config/nvchad/plugins/init.lua "$HOME"/.config/nvim/lua/custom/plugins/init.lua
+#ln -s "$HOME"/.config/nvchad/plugins/configs.lua "$HOME"/.config/nvim/lua/custom/plugins/configs.lua
+#ln -s "$HOME"/.config/nvchad/plugins/lspconfig.lua "$HOME"/.config/nvim/lua/custom/plugins/lspconfig.lua
 
 echo "Linking configs with their tag"
 if ! command -v dnscrypt-proxy &> /dev/null ;  then

@@ -14,10 +14,10 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM
 git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"/plugins/zsh-autosuggestions
 echo "Installing external oh-my-zsh plugins...done"
 
-echo "Installing NVChad"
-git clone https://github.com/NvChad/NvChad "$HOME"/.config/nvim
-echo "Run the following in order to complete the installation of nvchad: nvim +'hi NormalFloat guibg=#1e222a' +PackerSync"
-echo "Installing NVChad...done"
+#echo "installing nvchad"
+#git clone https://github.com/nvchad/nvchad "$home"/.config/nvim
+#echo "run the following in order to complete the installation of nvchad: nvim +'hi normalfloat guibg=#1e222a' +packersync"
+#echo "installing nvchad...done"
 
 echo "Setting up pinentry"
 mkdir -p "$HOME"/.gnupg
