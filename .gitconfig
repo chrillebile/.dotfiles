@@ -1,0 +1,26 @@
+[user]
+	name = Christian Bilevits
+	email = chrillebile@users.noreply.github.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPyhfb9LnhdoL2W4m4ry2EPSAMwx8J9gT8Jx7IMpSy6l
+[core]
+	editor = nvim
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[safe]
+	directory = *
+[color]
+	ui = auto
+[commit]
+  	verbose = true
+  	gpgSign = true
+[tag]
+  	sort = version:refname
+[rerere]
+  	enabled = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
