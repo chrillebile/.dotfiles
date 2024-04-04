@@ -39,6 +39,7 @@ brew install --cask raycast
 brew install --cask bartender
 brew install --cask 1password
 brew install --cask 1password-cli
+brew install --cask istat-menus
 echo "Casks...done"
 
 echo "Brew...done"
