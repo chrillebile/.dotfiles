@@ -14,12 +14,12 @@
 [color]
 	ui = auto
 [commit]
-  verbose = true
-  gpgSign = true
+  	verbose = true
+  	gpgSign = true
 [tag]
-  sort = version:refname
+  	sort = version:refname
 [rerere]
-  enabled = true
+  	enabled = true
 [gpg]
 	format = ssh
 [gpg "ssh"]
