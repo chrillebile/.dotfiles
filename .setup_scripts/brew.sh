@@ -2,7 +2,7 @@
 
 echo "Starting brew.sh..."
 echo "Checking if brew is installed"
-if ! command -v brew &> /dev/null ;  then
+if ! command -v brew &>/dev/null; then
     echo "Installing Brew..."
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     echo "Brew installation...done"
@@ -22,12 +22,10 @@ brew install git
 brew install yadm
 brew install zsh
 brew install tldr
-brew install romkatv/powerlevel10k/powerlevel10k
+brew install powerlevel10k
 brew install topgrade
-brew install dnscrypt-proxy
 brew install autojump
 brew install neovim
-brew install pinentry-mac # Needed for gpg signing
 echo "Packages...done"
 
 echo "Installing Brew Applications..."
@@ -36,8 +34,10 @@ brew install --cask spotify
 brew install --cask visual-studio-code
 brew install --cask font-meslo-lg-nerd-font
 brew install --cask appcleaner
-brew install --cask alfred
+brew install --cask raycast
 brew install --cask bartender
+brew install --cask 1password
+brew install --cask 1password-cli
 echo "Casks...done"
 
 echo "Brew...done"
