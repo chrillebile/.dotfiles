@@ -30,7 +30,7 @@ brew install golang
 echo "Packages...done"
 
 echo "Installing Brew Applications..."
-brew install --cask iterm2
+brew install --cask ghostty
 brew install --cask spotify
 brew install --cask visual-studio-code
 brew install --cask font-meslo-lg-nerd-font
