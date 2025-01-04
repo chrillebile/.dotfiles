@@ -28,6 +28,7 @@ brew install autojump
 brew install neovim
 brew install golang
 brew install fzf fd
+brew install rust
 echo "Packages...done"
 
 echo "Installing Brew Applications..."
