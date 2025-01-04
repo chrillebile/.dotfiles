@@ -1,6 +1,7 @@
 return {
   {
     "nvim-neo-tree/neo-tree.nvim",
+    branch = "main",
     opts = {
       filesystem = {
         filtered_items = {
