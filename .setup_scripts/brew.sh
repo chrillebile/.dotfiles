@@ -3,9 +3,9 @@
 echo "Starting brew.sh..."
 echo "Checking if brew is installed"
 if ! command -v brew &>/dev/null; then
-	echo "Installing Brew..."
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-	echo "Brew installation...done"
+  echo "Installing Brew..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  echo "Brew installation...done"
 fi
 
 echo "Updating Brew"
@@ -27,6 +27,7 @@ brew install topgrade
 brew install autojump
 brew install neovim
 brew install golang
+brew install fzf fd
 echo "Packages...done"
 
 echo "Installing Brew Applications..."
