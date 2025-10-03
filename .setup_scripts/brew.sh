@@ -13,10 +13,6 @@ brew update
 brew upgrade
 echo "Updating...done"
 
-echo "Tapping fonts..."
-brew tap homebrew/cask-fonts
-echo "Tapping...done"
-
 echo "Installing Brew Packages..."
 brew install git
 brew install yadm
@@ -29,6 +25,7 @@ brew install neovim
 brew install golang
 brew install fzf fd
 brew install rust
+brew install nvm
 echo "Packages...done"
 
 echo "Installing Brew Applications..."
