@@ -26,6 +26,7 @@ brew install golang
 brew install fzf fd
 brew install rust
 brew install nvm
+brew install opencode
 echo "Packages...done"
 
 echo "Installing Brew Applications..."
