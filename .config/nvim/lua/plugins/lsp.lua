@@ -1,6 +1,9 @@
 return {
   {
     "nvimtools/none-ls.nvim",
+    dependencies = {
+      "nvimtools/none-ls-extras.nvim",
+    },
     opts = function()
       local nls = require("null-ls")
       return {
@@ -9,7 +12,7 @@ return {
             insert_final_newline = true,
           }),
           nls.builtins.formatting.stylua,
-          nls.builtins.diagnostics.flake8,
+          require("none-ls.diagnostics.flake8"),
         },
       }
     end,
