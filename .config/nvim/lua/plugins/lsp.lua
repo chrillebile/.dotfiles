@@ -13,6 +13,7 @@ return {
           }),
           nls.builtins.formatting.stylua,
           require("none-ls.diagnostics.flake8"),
+          nls.builtins.formatting.biome,
         },
       }
     end,
