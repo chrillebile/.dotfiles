@@ -1,8 +1,8 @@
 {
-  "$schema": "https://opencode.ai/config.json",
-  "plugin": ["opencode-gemini-auth@latest"],
-  "mcp": {
-    "aws-knowledge-mcp-server": {
+	"$schema": "https://opencode.ai/config.json",
+	"plugin": ["opencode-gemini-auth@latest"],
+	"mcp": {
+		"aws-knowledge-mcp-server": {
 			"url": "https://knowledge-mcp.global.api.aws",
 			"type": "remote"
 		},
@@ -17,17 +17,21 @@
 			"url": "https://docs.mcp.cloudflare.com/mcp",
 			"type": "remote"
 		},
-    "OpenFeature": {
+		"OpenFeature": {
 			"command": ["npx", "-y", "@openfeature/mcp"],
 			"type": "local"
 		},
 		"fetch": {
 			"command": ["uvx", "mcp-server-fetch"],
-      "type": "local"
+			"type": "local"
 		},
 		"sequential-thinking": {
-			"command": ["npx", "-y", "@modelcontextprotocol/server-sequential-thinking"],
-      "type": "local"
-    }
-  }
+			"command": [
+				"npx",
+				"-y",
+				"@modelcontextprotocol/server-sequential-thinking"
+			],
+			"type": "local"
+		}
+	}
 }
