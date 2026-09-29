@@ -27,6 +27,7 @@ brew install fzf fd
 brew install rust
 brew install nvm
 brew install opencode
+brew install antigravity-cli
 echo "Packages...done"
 
 echo "Installing Brew Applications..."

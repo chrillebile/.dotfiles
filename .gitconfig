@@ -26,3 +26,9 @@
 	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
 [init]
 	defaultBranch = main
+
+[url "ssh://christian.bilevits@rev.homesmart.ninja:29418"]
+    insteadOf = ssh://rev.homesmart.ninja:29418
+ 
+[url "ssh://christian.bilevits@rev.homesmart.ninja:29418"]
+    insteadOf = ssh://christian.bilevits@gerrit.ihsdev.homesmart.ikea.net:29418

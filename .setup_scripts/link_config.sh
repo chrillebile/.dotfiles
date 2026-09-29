@@ -19,4 +19,8 @@ ln -s "$HOME"/.config/pk10/.pk10.zsh "$HOME"/.pk10.zsh
 ln -s "$HOME"/.config/oh-my-zsh/.zshrc "$HOME"/.zshrc
 echo "Linking...done"
 
+echo "Config base git"
+git config --global core.hooksPath "$HOME"/.config/git/hooks
+echo "Config base git...done"
+
 echo "Linking configs...done"

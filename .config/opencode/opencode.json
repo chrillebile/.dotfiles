@@ -1,37 +1,67 @@
 {
-	"$schema": "https://opencode.ai/config.json",
-	"plugin": ["opencode-gemini-auth@latest"],
-	"mcp": {
-		"aws-knowledge-mcp-server": {
-			"url": "https://knowledge-mcp.global.api.aws",
-			"type": "remote"
-		},
-		"memory": {
-			"command": ["npx", "-y", "@modelcontextprotocol/server-memory"],
-			"environment": {
-				"MEMORY_FILE_PATH": "/Users/chrillebile/.mcp/memory"
-			},
-			"type": "local"
-		},
-		"cloudflare-docs-mcp": {
-			"url": "https://docs.mcp.cloudflare.com/mcp",
-			"type": "remote"
-		},
-		"OpenFeature": {
-			"command": ["npx", "-y", "@openfeature/mcp"],
-			"type": "local"
-		},
-		"fetch": {
-			"command": ["uvx", "mcp-server-fetch"],
-			"type": "local"
-		},
-		"sequential-thinking": {
-			"command": [
-				"npx",
-				"-y",
-				"@modelcontextprotocol/server-sequential-thinking"
-			],
-			"type": "local"
-		}
-	}
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "OpenFeature": {
+      "command": [
+        "npx",
+        "-y",
+        "@openfeature/mcp"
+      ],
+      "type": "local"
+    },
+    "aws-knowledge-mcp-server": {
+      "type": "remote",
+      "url": "https://knowledge-mcp.global.api.aws"
+    },
+    "cloudflare-docs-mcp": {
+      "type": "remote",
+      "url": "https://docs.mcp.cloudflare.com/mcp"
+    },
+    "fetch": {
+      "command": [
+        "uvx",
+        "mcp-server-fetch"
+      ],
+      "type": "local"
+    },
+    "memory": {
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "environment": {
+        "MEMORY_FILE_PATH": "/Users/chrillebile/.mcp/memory"
+      },
+      "type": "local"
+    },
+    "sequential-thinking": {
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "type": "local"
+    }
+  },
+  "plugin": [
+    "opencode-gemini-auth@latest",
+    "opencode-websearch-cited@latest",
+    "@mohak34/opencode-notifier@latest"
+  ],
+  "provider": {
+    "ollama": {
+      "models": {
+        "glm-4.7-flash": {
+          "_launch": true,
+          "name": "glm-4.7-flash"
+        }
+      },
+      "name": "Ollama",
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://127.0.0.1:11434/v1"
+      }
+    }
+  }
 }
